@@ -1,0 +1,17 @@
+USE schoolDW
+GO
+
+DELETE FROM FExams
+DELETE FROM FMeeting
+DELETE FROM FSurveys
+DELETE FROM FAttendance
+DELETE FROM DimClassroom
+DELETE FROM DimCourse
+DELETE FROM DimTeacher
+DELETE FROM DimStudents
+DELETE FROM DimTime
+DELETE FROM DimDate
+DELETE FROM DimClass
+DELETE FROM DimCircumstances
+
+
