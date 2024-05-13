@@ -36,12 +36,14 @@ INSERT INTO DimTeacher(
 	Teacher_Name,
 	Teacher_Surname,
 	CityDistrict,
+	Gender,
 	IsCurrent)
 	SELECT 
 		Pesel,
 		Teacher_Name,
 		Teacher_Surname,
 		CityDistrict,
+		Gender,
 		1
 	FROM vETLDimTeachers
 	EXCEPT
@@ -50,6 +52,7 @@ INSERT INTO DimTeacher(
 		Teacher_Name,
 		Teacher_Surname,
 		CityDistrict,
+		Gender,
 		1
 	FROM DimTeacher;
 Drop View vETLDimTeachers;

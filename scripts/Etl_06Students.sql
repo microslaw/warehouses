@@ -14,6 +14,7 @@ SELECT DISTINCT
 FROM schoolDB.dbo.Students;
 go
 
+
 MERGE INTO DimStudents as TT
 	USING vETLDimStudents as ST
 		ON TT.Pesel = ST.Pesel
@@ -36,12 +37,14 @@ INSERT INTO DimStudents(
 	Student_Name,
 	Student_Surname,
 	CityDistrict,
+	Gender,
 	IsCurrent)
 	SELECT 
 		Pesel,
 		Student_Name,
 		Student_Surname,
 		CityDistrict,
+		Gender,
 		1
 	FROM vETLDimStudents
 	EXCEPT
@@ -50,6 +53,7 @@ INSERT INTO DimStudents(
 		Student_Name,
 		Student_Surname,
 		CityDistrict,
+		Gender,
 		1
 	FROM DimStudents;
 Drop View vETLDimStudents;
