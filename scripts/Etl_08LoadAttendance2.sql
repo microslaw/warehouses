@@ -18,4 +18,4 @@ CREATE Table Attendance
 	Late Varchar(5)
 )
 
-BULK INSERT Attendance FROM 'C:\projects\warehouses\dbData\attendance2.csv' WITH (FIELDTERMINATOR=',', rowterminator = '\n' );
+BULK INSERT Attendance FROM 'C:\projects\warehouses\dbData\attendance.csv' WITH (FIELDTERMINATOR=',', rowterminator = '\n' );
