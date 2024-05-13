@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3c9a0dba-6ef8-4a1e-bfec-d73d86891319" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b497a7ef-d64d-4ef6-a55d-677e7b94af12" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dim Classroom</ID>
   <Name>Dim Classroom</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6669" scrolltop="-12012" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="16378" y="26326" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6669" scrolltop="-12012" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12912" y="19553" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimClassroom" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimClassroom" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
             </control>
@@ -68,35 +68,35 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="dbe7edcb-0355-43f0-8ba1-302120be57f3">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d75bb0d5-2004-491b-a366-4d7c88d8b861">
     <DataSourceViewID>School DW</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="4be5f281-d3c0-4429-b1cf-3774c182ceb8">
+  <ErrorConfiguration dwd:design-time-name="dc7875ea-0012-4e83-aa51-eef6f3cd2ff6">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="a3100650-313f-4094-b875-67cd6c333be7">
+    <Attribute dwd:design-time-name="f37d749a-6b9a-4757-b7f9-7017f9d7ca1b">
       <ID>Room ID</ID>
       <Name>Room ID</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d2970929-fc76-4ae5-b629-05679e5f97d3">
+        <KeyColumn dwd:design-time-name="47927680-c04f-4c64-828e-233ab89d5f3e">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2a67d9e-8983-4afd-ab1f-efefc966c012">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e1e1f743-1add-47f2-b37c-3c4f2ba7ef54">
             <TableID>dbo_DimClassroom</TableID>
             <ColumnID>RoomID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="a3943400-2a6f-47d1-97cc-312ad0ff9784">
+        <AttributeRelationship dwd:design-time-name="b999b9d9-26a9-4fb6-b8ad-a11a5e915db6">
           <AttributeID>Room Number</AttributeID>
           <Name>Room Number</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c805316e-d11e-4c0a-b2ae-9bb6a1204a63">
+        <AttributeRelationship dwd:design-time-name="6a48b7cb-a5f7-4505-8d0a-17ca033f6687">
           <AttributeID>Floor</AttributeID>
           <Name>Floor</Name>
         </AttributeRelationship>
@@ -105,13 +105,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="21f0ccc6-7f45-491d-9d43-4f541d8314d0">
+    <Attribute dwd:design-time-name="43295f93-cd6f-40bc-a6d0-d92962b8820e">
       <ID>Room Number</ID>
       <Name>Room Number</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d36e89a7-2189-4f10-bed4-5cb224fddb86">
+        <KeyColumn dwd:design-time-name="9007c19b-dda7-4914-ad6b-5f56ee92a252">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2a478ca8-a395-4a8f-936a-9ea054ffd97b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4a851647-7921-4fa2-900d-d1f9d8d04b93">
             <TableID>dbo_DimClassroom</TableID>
             <ColumnID>RoomNumber</ColumnID>
           </Source>
@@ -120,14 +120,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2bfd302e-229a-4351-9f72-6460fae05831">
+    <Attribute dwd:design-time-name="5f96d552-e47f-42ff-8cb0-e2b308429b75">
       <ID>Floor</ID>
       <Name>Floor</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="45122e76-b6e3-4e6e-8a78-e15a92cfe485">
+        <KeyColumn dwd:design-time-name="1571667f-38b0-4bda-af8d-e55d1bfdf690">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e7f9ffd-2bae-446b-9599-f50e67c13601">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e11856bb-a10d-469c-a804-b9136da8c1dc">
             <TableID>dbo_DimClassroom</TableID>
             <ColumnID>Floor</ColumnID>
           </Source>

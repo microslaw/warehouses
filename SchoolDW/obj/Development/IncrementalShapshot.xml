@@ -1,8 +1,8 @@
 ﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
   <Target>
-    <Database>schoolDW</Database>
-    <Server>localhost</Server>
-    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+    <Database>SchoolDW</Database>
+    <Server>DESKTOP-84D09FT</Server>
+    <ConnectionString>Data Source=DESKTOP-84D09FT;Timeout=0</ConnectionString>
   </Target>
   <Options>
     <TransactionalDeployment>false</TransactionalDeployment>
@@ -19,7 +19,7 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>OKDWkek+5xVPg6ZyCxyS7h8cT2Y=13/05/2024 18:25:4013/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>7LKzrcQ7qPiymApTUTA1DIgvPWM=13/05/2024 23:17:2213/05/2024 16:16:22</TimeStamp>
         <ID>
           <String>School DW</String>
         </ID>
@@ -33,14 +33,14 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>buPF1BpMJS9n+BweQgo1j73SbD8=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>gws9BRz+48TxBW+V/2NW2lvBkPo=13/05/2024 23:12:1213/05/2024 16:16:22</TimeStamp>
         <ID>
           <String>Dim Classroom</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>ES27yu8lQmrPCMnmUbO/4zWliFs=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>ES27yu8lQmrPCMnmUbO/4zWliFs=13/05/2024 23:10:5113/05/2024 16:16:22</TimeStamp>
         <ID>
           <String>Dim Course</String>
         </ID>
@@ -89,7 +89,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>ClseNbVlKtT+gND+CqLjFx7aIFs=13/05/2024 18:26:2113/05/2024 16:16:22OBU+LScbhFML9PNE8zvMQBHwQWQ=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>opnL32CFxKQIj1Z4X7zCFqhRF1s=13/05/2024 23:12:1213/05/2024 16:16:22OBU+LScbhFML9PNE8zvMQBHwQWQ=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
         <ID>
           <String>School DW</String>
         </ID>
@@ -97,14 +97,14 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>sz46IkSnfuv8mu9OU8X3T0RN7uI=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
+      <TimeStamp>sz46IkSnfuv8mu9OU8X3T0RN7uI=13/05/2024 23:10:5113/05/2024 16:16:22</TimeStamp>
       <ID>
-        <String>schoolDW</String>
+        <String>SchoolDW</String>
       </ID>
     </DatabaseSnapshot>
     <Granularity>Coarse</Granularity>
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-05-13T16:29:56.236667Z</LastDeployed>
+  <LastDeployed>2024-05-13T21:18:30.753333Z</LastDeployed>
 </DeploymentSnapshot>

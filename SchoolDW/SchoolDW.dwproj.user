@@ -3,8 +3,8 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>localhost</TargetServer>
-        <TargetDatabase>schoolDW</TargetDatabase>
+        <TargetServer>DESKTOP-84D09FT</TargetServer>
+        <TargetDatabase>SchoolDW</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
           <ObjectType>Current</ObjectType>
