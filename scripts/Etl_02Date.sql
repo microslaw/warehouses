@@ -1,3 +1,6 @@
+USE schoolDW
+GO
+
 Declare @StartDate date;
 Declare @EndDate date;
 

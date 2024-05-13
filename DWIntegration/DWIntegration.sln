@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.34601.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "DWIntegration", "DWIntegration.dtproj", "{14DB6F54-DCD2-4E12-93B5-69AB0BD69547}"
 EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SchoolDW", "..\SchoolDW\SchoolDW.dwproj", "{B112AC72-95E2-4806-ADC9-8A24AC8567A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -12,6 +14,9 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{14DB6F54-DCD2-4E12-93B5-69AB0BD69547}.Development|Default.ActiveCfg = Development
 		{14DB6F54-DCD2-4E12-93B5-69AB0BD69547}.Development|Default.Build.0 = Development
+		{B112AC72-95E2-4806-ADC9-8A24AC8567A3}.Development|Default.ActiveCfg = Development
+		{B112AC72-95E2-4806-ADC9-8A24AC8567A3}.Development|Default.Build.0 = Development
+		{B112AC72-95E2-4806-ADC9-8A24AC8567A3}.Development|Default.Deploy.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

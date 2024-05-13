@@ -1,1 +1,1 @@
-SELECT * FROM Meeting
+SELECT * FROM dbo.DimCourse

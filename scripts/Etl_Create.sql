@@ -1,3 +1,13 @@
+
+BEGIN TRY
+use master
+alter database schoolDW set single_user with rollback immediate
+drop database schoolDW
+END TRY
+BEGIN CATCH
+END CATCH
+
+
 CREATE DATABASE schoolDW collate Latin1_General_CI_AS;
 GO
 
@@ -91,7 +101,7 @@ GO
 CREATE TABLE DimCircumstances
 (
 	CircumstancesID INTEGER IDENTITY(1,1) PRIMARY KEY,
-	CatchUP Varchar(30) NOT NULL,
+	CatchUP Varchar(30),
 	Excused Varchar(3) NOT NULL,
 	Late Varchar(3) NOT NULL,
 	CONSTRAINT chk_Excused CHECK (Excused IN ('Yes', 'No')),

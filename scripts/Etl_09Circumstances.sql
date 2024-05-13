@@ -1,3 +1,9 @@
+USE schoolDW
+GO
+
+DROP View IF EXISTS Circumstances
+GO
+
 CREATE VIEW Circumstances AS
 (SELECT CASE WHEN Excused = 'False' THEN 'No' ELSE 'Yes' END AS Excused,
 CASE WHEN Late = 'False' THEN 'No' ELSE 'Yes' END AS Late,
@@ -7,6 +13,8 @@ Attendance
 GROUP BY
 Excused, Late, CATCHUP);
 GO
+
+SELECT * FROM Circumstances
 
 MERGE INTO DimCircumstances as DimensionTable
 	USING Circumstances as NewData

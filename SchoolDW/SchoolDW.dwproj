@@ -72,7 +72,7 @@
           <ConfigurationSetting>
             <Id>School DW</Id>
             <Name>School DW</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=schoolDW</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-84D09FT;Integrated Security=SSPI;Initial Catalog=schoolDB</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>

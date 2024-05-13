@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="5/7/2024 10:36:00 PM"
+  DTS:CreationDate="5/13/2024 6:00:04 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-84D09FT"
   DTS:CreatorName="DESKTOP-84D09FT\milos"
-  DTS:DTSID="{758675B8-720E-4ABA-A16C-6B21944C4BC7}"
+  DTS:DTSID="{A44E68AC-7512-424A-A1D1-18057AFC63E1}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5467.0"
   DTS:LocaleID="2057"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="3LoadSnapshot2"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{E140790E-6BD4-425D-AC74-BADFC408EE37}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{0EF4954C-59D2-481D-A2F6-32231A34A39C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-84D09FT]"
       DTS:CreationName="MSOLAP100"
-      DTS:DTSID="{0CFD953A-5472-4925-8BD3-DD984963BEDF}"
+      DTS:DTSID="{EF730A1D-BF04-492C-A781-ECD42567E1C5}"
       DTS:ObjectName="DESKTOP-84D09FT">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -29,63 +29,26 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAiiq7S7sh8EWxhdZiwvCiFQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACoC4iNdWhyL0kBBfYavSkjskVpcxun+JPwdDYzYZeTwAAAAAAOgAAAAAIAACAAAAA+rm1WAgyiQ66lamgG7m6hEHDkv00deH3sQ8Hn741ISSAAAABAYAfxkYGZQ297jsvQ0MucY2uX30LmRCO/ODnZL4RJVUAAAABmRu58YpM3578hNTDd1Q8j1WEehBqv7k6zgzMXizugeyRBvJCSEiUFMGh3DpxWLL+uxsIqoBiKswCFPhmXWX/N</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA50OqZ/Tp20WzP74mvIWnIwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAIwE1BYEZoNBDmbMrrvUFghEGJ9bvc/1Nc9760i4sghQAAAAAOgAAAAAIAACAAAADfcZPmI/m3xY1pPh22PmIMX9Ycg4Dd+P2nRtbOmuedSSAAAADV+MNdXOjcS5lwO/YcNi/Wsit9BFOndzk685zlHLFoLkAAAACpOz8LbXc60IeeGchkwZ8Bppamad8w1l9mWfagbYJq2M/0v5GSH4GiufyuMgeotKYu1Q3cPFOLSW4Tsg4PDMI/</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-84D09FT.schoolDW]"
+      DTS:refId="Package.ConnectionManagers[DESKTOP-84D09FT.master]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
-      DTS:ObjectName="DESKTOP-84D09FT.schoolDW">
+      DTS:DTSID="{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}"
+      DTS:ObjectName="DESKTOP-84D09FT.master">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-84D09FT;Initial Catalog=schoolDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{66A895FF-78E9-434D-A0CF-0944B3A14995}DESKTOP-84D09FT.schoolDW;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-84D09FT.SchoolDW]"
-      DTS:CreationName="MSOLAP100"
-      DTS:DTSID="{0383C58A-F83D-4525-819F-5C5611DE031F}"
-      DTS:ObjectName="DESKTOP-84D09FT.SchoolDW">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Data Source=DESKTOP-84D09FT;User ID=milosz.grunwald@gmail.com;Initial Catalog=SchoolDW;Provider=MSOLAP.8;Impersonation Level=Impersonate;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAiiq7S7sh8EWxhdZiwvCiFQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA8Q/TKVO1XeyL8gdMbwuPqOIPYtb8jhyPfYb4uUY0TygAAAAAOgAAAAAIAACAAAACNjacGW1Lql02Y/hnev7GqDhMsWJq3aDNcHYDvcLz7NiAAAACYAXSNoF9gRH9adcjuCeFK9v41x3BWEq0XZRBpxsJOrEAAAAD3t9kW97TPyF2E/bujc05dY/5dje+iUw4SK+y0nzyCU1Pfj7cSY9dKaJ+QV0gnoSH6Z+F7+TVaeB8/MxycDocS</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Etl_01TIme.sql]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{A4282F8E-3E87-4250-896C-C9FB2B1C2B7D}"
-      DTS:ObjectName="Etl_01TIme.sql">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="C:\projects\warehouses\scripts\Etl_01TIme.sql" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Etl_02Date.sql]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{C172E7AC-1975-4C79-BBC6-0C0AAAF48CBE}"
-      DTS:ObjectName="Etl_02Date.sql">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="C:\projects\warehouses\scripts\Etl_02Date.sql" />
+          DTS:ConnectionString="Data Source=DESKTOP-84D09FT;Initial Catalog=master;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-2InsertSnapshot2-{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}DESKTOP-84D09FT.master;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Etl_03Course.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{D050189E-6D77-4D0A-BB1E-E168ED7D3C2D}"
+      DTS:DTSID="{C6584C92-C25F-4F38-877E-140D6A501EAF}"
       DTS:ObjectName="Etl_03Course.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -95,7 +58,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Etl_04Classes.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{26B5CBFB-6E28-465D-A103-3AB285276980}"
+      DTS:DTSID="{76F3DC23-9006-4A78-B2CE-B2DC92C2EC01}"
       DTS:ObjectName="Etl_04Classes.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -105,7 +68,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Etl_05Classroom.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{FCCA10C4-C4E1-4453-9ADC-E0507B0A5362}"
+      DTS:DTSID="{1A436E02-421C-4871-B675-1722DBEAA2DD}"
       DTS:ObjectName="Etl_05Classroom.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -115,7 +78,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Etl_06Students.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{E247D50E-4744-4392-9D4D-7DBC2BC6D29D}"
+      DTS:DTSID="{8B71F845-CC5B-4CDB-AE15-A0D5B8F17AF5}"
       DTS:ObjectName="Etl_06Students.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -125,7 +88,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Etl_07Teachers.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{7128CB8C-F127-4FA4-9F8C-37DEC786FCEC}"
+      DTS:DTSID="{236E2873-5FC5-4BE3-BB88-AA8D749793FD}"
       DTS:ObjectName="Etl_07Teachers.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -133,30 +96,20 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Etl_08LoadAttendance.sql]"
+      DTS:refId="Package.ConnectionManagers[Etl_08LoadAttendance2.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{50937E05-6574-498B-8062-A793BA726AA9}"
-      DTS:ObjectName="Etl_08LoadAttendance.sql">
+      DTS:DTSID="{B3F57FEC-D8E8-4551-8600-DA9A888B0BF3}"
+      DTS:ObjectName="Etl_08LoadAttendance2.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="C:\projects\warehouses\scripts\Etl_08LoadAttendance.sql" />
+          DTS:ConnectionString="C:\projects\warehouses\scripts\Etl_08LoadAttendance2.sql" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Etl_09Circumstances.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{6BBB21B1-ACBB-4DDB-91D2-02540A0B1121}"
+      DTS:DTSID="{24026E16-B04C-46DD-A1AE-27C9A1AAB78D}"
       DTS:ObjectName="Etl_09Circumstances.sql">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="C:\projects\warehouses\scripts\Etl_09Circumstances.sql" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Etl_09Circumstances.sql 1]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{A4903A58-FB66-470B-938D-CC0DD3E7F111}"
-      DTS:ObjectName="Etl_09Circumstances.sql 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="C:\projects\warehouses\scripts\Etl_09Circumstances.sql" />
@@ -165,7 +118,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Etl_10Attendance.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{BE308C5A-580F-4F8B-BEB6-8BCA9362C360}"
+      DTS:DTSID="{B700DF8F-9EAA-463F-A32F-5E9DFAC4CD5D}"
       DTS:ObjectName="Etl_10Attendance.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -175,7 +128,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Etl_11Exams.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{901314DF-9861-49E9-84A0-904FE82A676B}"
+      DTS:DTSID="{7572AE30-BD01-42F2-81C8-EAA09C38075A}"
       DTS:ObjectName="Etl_11Exams.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -185,7 +138,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Etl_12Meeting.sql]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{CB386EB2-C6CB-40A2-95AE-9B0991FB6C14}"
+      DTS:DTSID="{02367B67-F6F6-4038-8D77-B5946043AC79}"
       DTS:ObjectName="Etl_12Meeting.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -193,23 +146,13 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Etl_13Surveys.sql]"
+      DTS:refId="Package.ConnectionManagers[Etl_12Meeting.sql 1]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{6C0219D6-0B0C-4D9C-A517-9D3283063551}"
-      DTS:ObjectName="Etl_13Surveys.sql">
+      DTS:DTSID="{D83652AD-9A72-41C8-AB30-C341C6CA0BBC}"
+      DTS:ObjectName="Etl_12Meeting.sql 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="C:\projects\warehouses\scripts\Etl_13Surveys.sql" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Etl_Delete.sql]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{029C6000-51AD-4E13-9D35-BF9D32061D6C}"
-      DTS:ObjectName="Etl_Delete.sql">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="C:\projects\warehouses\scripts\Etl_Delete.sql" />
+          DTS:ConnectionString="C:\projects\warehouses\scripts\Etl_12Meeting.sql" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -219,7 +162,7 @@
       DTS:refId="Package\Analysis Services Processing Task"
       DTS:CreationName="Microsoft.DTSProcessingTask"
       DTS:Description="Analysis Services Processing Task"
-      DTS:DTSID="{1B6AC635-D325-402E-A64A-2E10316EEC3A}"
+      DTS:DTSID="{b6aced7e-5e28-4d31-acdf-b4f09ad1bd28}"
       DTS:ExecutableType="Microsoft.DTSProcessingTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Analysis Services Processing Task"
@@ -227,15 +170,15 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <ASProcessingData
-          ConnectionName="DESKTOP-84D09FT.SchoolDW"
-          ProcessingCommands="&lt;Batch xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;SchoolDW&lt;/DatabaseID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;&lt;/Batch&gt;" />
+          ConnectionName="DESKTOP-84D09FT"
+          ProcessingCommands="&lt;Batch xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;schoolDW&lt;/DatabaseID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;&lt;/Batch&gt;" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Attendance"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{92de3b51-03cb-4789-8fcf-b919d68de7e7}"
+      DTS:DTSID="{56b69cc9-415e-4fdb-a3ff-45401ac08888}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Attendance"
@@ -244,7 +187,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
+          SQLTask:Connection="{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}"
           SQLTask:SqlStmtSourceType="FileConnection"
           SQLTask:SqlStatementSource="Etl_10Attendance.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
@@ -253,7 +196,7 @@
       DTS:refId="Package\Circumstances"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{cdedfc3c-3791-4bb7-a86f-caae16885ea9}"
+      DTS:DTSID="{e0f56468-c893-4412-946e-c9b7cbbdd29d}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Circumstances"
@@ -262,25 +205,25 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
+          SQLTask:Connection="{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}"
           SQLTask:SqlStmtSourceType="FileConnection"
-          SQLTask:SqlStatementSource="Etl_09Circumstances.sql 1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="Etl_09Circumstances.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Classes"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{9a77f5c7-e410-4292-9ed7-4cea86f8ef14}"
+      DTS:DTSID="{86b21727-07d1-4936-a089-6be74401ad0d}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Classes"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
+          SQLTask:Connection="{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}"
           SQLTask:SqlStmtSourceType="FileConnection"
           SQLTask:SqlStatementSource="Etl_04Classes.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
@@ -289,16 +232,16 @@
       DTS:refId="Package\Classroom"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{59bcc445-3d8e-4a52-aa4b-1d05e78b7cd7}"
+      DTS:DTSID="{cd4873c8-50cf-4cba-b4a6-3b4058876fe4}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Classroom"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
+          SQLTask:Connection="{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}"
           SQLTask:SqlStmtSourceType="FileConnection"
           SQLTask:SqlStatementSource="Etl_05Classroom.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
@@ -307,61 +250,25 @@
       DTS:refId="Package\Courses"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{80f670e6-be74-4f72-ba17-500cedca38be}"
+      DTS:DTSID="{9a9cccbd-cf90-4e83-bc0c-c238c8d81ae3}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Courses"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
+          SQLTask:Connection="{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}"
           SQLTask:SqlStmtSourceType="FileConnection"
           SQLTask:SqlStatementSource="Etl_03Course.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Date"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{039AF553-10BC-42D6-8DA9-23787B8D2E5E}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Date"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
-          SQLTask:SqlStmtSourceType="FileConnection"
-          SQLTask:SqlStatementSource="Etl_02Date.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Delete all"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{f1c2baeb-56c8-447b-9a84-b76ad27929c3}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Delete all"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
-          SQLTask:SqlStmtSourceType="FileConnection"
-          SQLTask:SqlStatementSource="Etl_Delete.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Exams"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{00d71716-7c6c-41dd-bf5d-cf8c4d5160ff}"
+      DTS:DTSID="{afdc5737-ba1e-4edd-b1a8-e2c2c596dcd6}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Exams"
@@ -370,7 +277,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
+          SQLTask:Connection="{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}"
           SQLTask:SqlStmtSourceType="FileConnection"
           SQLTask:SqlStatementSource="Etl_11Exams.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
@@ -379,7 +286,7 @@
       DTS:refId="Package\Load attendance"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{8f1a3eaa-56a9-4caa-b38a-3c4f8b1fb4ab}"
+      DTS:DTSID="{b786bdf6-18fd-42ca-8850-afc31d186916}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load attendance"
@@ -388,16 +295,16 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
+          SQLTask:Connection="{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}"
           SQLTask:SqlStmtSourceType="FileConnection"
-          SQLTask:SqlStatementSource="Etl_08LoadAttendance.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="Etl_08LoadAttendance2.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Meeting"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{de6a5b36-31db-49f4-8a72-2fac218ece64}"
+      DTS:DTSID="{35b5ce25-fc31-4ab7-ba3d-0c9cf1cf2424}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Meeting"
@@ -406,7 +313,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
+          SQLTask:Connection="{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}"
           SQLTask:SqlStmtSourceType="FileConnection"
           SQLTask:SqlStatementSource="Etl_12Meeting.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
@@ -415,7 +322,7 @@
       DTS:refId="Package\Students"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{f07e5e07-8e5a-4e59-81ab-e178814e1bfa}"
+      DTS:DTSID="{17a57633-921d-49d5-bc63-dacc53f32365}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Students"
@@ -424,7 +331,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
+          SQLTask:Connection="{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}"
           SQLTask:SqlStmtSourceType="FileConnection"
           SQLTask:SqlStatementSource="Etl_06Students.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
@@ -433,7 +340,7 @@
       DTS:refId="Package\Survey"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{37df1efa-1b27-4e59-99ee-e9f61dec7528}"
+      DTS:DTSID="{4b2bef9a-5123-4638-aa73-98271f0361ec}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Survey"
@@ -442,69 +349,35 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
+          SQLTask:Connection="{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}"
           SQLTask:SqlStmtSourceType="FileConnection"
-          SQLTask:SqlStatementSource="Etl_13Surveys.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="Etl_12Meeting.sql 1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Teachers"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{7da57512-0989-480c-a289-153cb506fe22}"
+      DTS:DTSID="{35324b01-9bd2-4c9a-a7cd-b6aa662178f1}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Teachers"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
+          SQLTask:Connection="{1543BF7F-5690-476B-AAFA-BDBBFEDBDBBB}"
           SQLTask:SqlStmtSourceType="FileConnection"
           SQLTask:SqlStatementSource="Etl_07Teachers.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Time"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{f6254640-c99d-45de-bec2-e2d52817f470}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Time"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{66A895FF-78E9-434D-A0CF-0944B3A14995}"
-          SQLTask:SqlStmtSourceType="FileConnection"
-          SQLTask:SqlStatementSource="Etl_01TIme.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint]"
-      DTS:CreationName=""
-      DTS:DTSID="{ECBAFFBB-6D6E-41B5-A4A5-FD505ED3CB20}"
-      DTS:From="Package\Date"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint"
-      DTS:To="Package\Courses" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{3F307209-7C84-4B00-8676-4683F27DAEDC}"
-      DTS:From="Package\Time"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 1"
-      DTS:To="Package\Courses" />
-    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 10]"
       DTS:CreationName=""
-      DTS:DTSID="{4F789385-84EC-41E8-83F2-5B1A0A1CD7C7}"
+      DTS:DTSID="{ff56f013-9a49-4088-93d6-6c0a49bee50b}"
       DTS:From="Package\Exams"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 10"
@@ -512,7 +385,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 11]"
       DTS:CreationName=""
-      DTS:DTSID="{D336811C-A2EC-4A33-8B84-6B6D529A6DC5}"
+      DTS:DTSID="{42515fb1-633e-4aa9-82fd-be15dfc702b7}"
       DTS:From="Package\Meeting"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 11"
@@ -520,63 +393,47 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 12]"
       DTS:CreationName=""
-      DTS:DTSID="{1D38B84C-8146-4545-B923-FDAEE9A4F13D}"
+      DTS:DTSID="{23ba1dbc-d4d9-4fee-b0a9-8ce67c899822}"
       DTS:From="Package\Survey"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 12"
       DTS:To="Package\Analysis Services Processing Task" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 13]"
+      DTS:refId="Package.PrecedenceConstraints[Constraint 15]"
       DTS:CreationName=""
-      DTS:DTSID="{BF08DDE4-AD76-4350-BC19-F3E22D2F76AA}"
-      DTS:From="Package\Delete all"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 13"
-      DTS:To="Package\Time" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 14]"
-      DTS:CreationName=""
-      DTS:DTSID="{0D0A191A-B569-4052-B03E-9E175C2FC034}"
-      DTS:From="Package\Delete all"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 14"
-      DTS:To="Package\Date" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
-      DTS:CreationName=""
-      DTS:DTSID="{50F2D144-E0A9-4DB2-8EA4-78D10A1780E2}"
-      DTS:From="Package\Courses"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Classes" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
-      DTS:CreationName=""
-      DTS:DTSID="{4D72BDA0-AE87-493B-A973-8E7F10D0D712}"
-      DTS:From="Package\Classes"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 3"
-      DTS:To="Package\Classroom" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
-      DTS:CreationName=""
-      DTS:DTSID="{C8EA3C35-BEC1-43F7-B28D-E468BA4355B5}"
+      DTS:DTSID="{5ec0ad7c-8548-4578-a628-bf7dc3d8c4cf}"
       DTS:From="Package\Classroom"
       DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 4"
-      DTS:To="Package\Students" />
+      DTS:ObjectName="Constraint 15"
+      DTS:To="Package\Load attendance" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 16]"
+      DTS:CreationName=""
+      DTS:DTSID="{4b44cb6e-59ef-4337-a5b2-c054e3b191f1}"
+      DTS:From="Package\Classes"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 16"
+      DTS:To="Package\Load attendance" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 17]"
+      DTS:CreationName=""
+      DTS:DTSID="{16f0eaca-e6d4-40e9-8c6e-d23130871d7e}"
+      DTS:From="Package\Courses"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 17"
+      DTS:To="Package\Load attendance" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
       DTS:CreationName=""
-      DTS:DTSID="{14E51A00-7D44-48A9-B748-7D1AC4B7E042}"
+      DTS:DTSID="{8e212f35-a33e-45da-a739-c1dbce181a18}"
       DTS:From="Package\Students"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
-      DTS:To="Package\Teachers" />
+      DTS:To="Package\Load attendance" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
       DTS:CreationName=""
-      DTS:DTSID="{99AA5259-9D5D-4EE5-86FC-ACDA1118F3B3}"
+      DTS:DTSID="{3cdc042f-9792-43a6-ab1c-b307b4edee9a}"
       DTS:From="Package\Teachers"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 6"
@@ -584,7 +441,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
       DTS:CreationName=""
-      DTS:DTSID="{CBB2FCDD-9C0A-48C5-966A-4666414E6E5C}"
+      DTS:DTSID="{5ef0f392-5eef-46de-a48a-b5505166420f}"
       DTS:From="Package\Load attendance"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 7"
@@ -592,7 +449,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
       DTS:CreationName=""
-      DTS:DTSID="{8492AAF3-20E7-4783-83FD-6882DA4ED757}"
+      DTS:DTSID="{e3d56204-3456-4d22-a3e6-838c206f7354}"
       DTS:From="Package\Circumstances"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 8"
@@ -600,7 +457,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
       DTS:CreationName=""
-      DTS:DTSID="{A6F17F15-97E1-41CA-9A34-58F5972B2E15}"
+      DTS:DTSID="{04479bab-dccd-4fde-8b3e-eac0a77682e6}"
       DTS:From="Package\Attendance"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 9"
@@ -621,130 +478,42 @@
         <NodeLayout
           Size="237,42"
           Id="Package\Analysis Services Processing Task"
-          TopLeft="468,1255" />
+          TopLeft="420,881" />
         <NodeLayout
           Size="132,42"
           Id="Package\Attendance"
-          TopLeft="527,948" />
+          TopLeft="479,574" />
         <NodeLayout
           Size="147,42"
           Id="Package\Circumstances"
-          TopLeft="521,862" />
-        <NodeLayout
-          Size="113,42"
-          Id="Package\Classes"
-          TopLeft="523,427" />
-        <NodeLayout
-          Size="127,42"
-          Id="Package\Classroom"
-          TopLeft="517,514" />
-        <NodeLayout
-          Size="116,42"
-          Id="Package\Courses"
-          TopLeft="523,335" />
-        <NodeLayout
-          Size="101,42"
-          Id="Package\Date"
-          TopLeft="414,178" />
+          TopLeft="473,488" />
         <NodeLayout
           Size="110,42"
           Id="Package\Exams"
-          TopLeft="535,1032" />
+          TopLeft="487,658" />
         <NodeLayout
           Size="157,42"
           Id="Package\Load attendance"
-          TopLeft="509,775" />
+          TopLeft="467,396" />
         <NodeLayout
           Size="116,42"
           Id="Package\Meeting"
-          TopLeft="534,1100" />
+          TopLeft="486,726" />
         <NodeLayout
           Size="120,42"
           Id="Package\Students"
-          TopLeft="525,590" />
+          TopLeft="636,200" />
         <NodeLayout
           Size="111,42"
           Id="Package\Survey"
-          TopLeft="531,1173" />
+          TopLeft="483,799" />
         <NodeLayout
           Size="122,42"
           Id="Package\Teachers"
-          TopLeft="525,675" />
-        <NodeLayout
-          Size="102,42"
-          Id="Package\Time"
-          TopLeft="636,175" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="464.5,220">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="116.5,115"
-              Start="0,0"
-              End="116.5,107.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,53.5"
-                    Point2="0,57.5"
-                    Point3="4,57.5" />
-                  <mssgle:LineSegment
-                    End="112.5,57.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="112.5,57.5"
-                    Point2="116.5,57.5"
-                    Point3="116.5,61.5" />
-                  <mssgle:LineSegment
-                    End="116.5,107.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="687,217">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-88,118"
-              Start="0,0"
-              End="-88,110.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,65.8367346938775" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,65.8367346938775"
-                    Point2="0,69.8367346938775"
-                    Point3="-4,69.8367346938775" />
-                  <mssgle:LineSegment
-                    End="-84,69.8367346938775" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-84,69.8367346938775"
-                    Point2="-88,69.8367346938775"
-                    Point3="-88,73.8367346938775" />
-                  <mssgle:LineSegment
-                    End="-88,110.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="783,202" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10]"
-          TopLeft="591,1074">
+          TopLeft="543,700">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -766,7 +535,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11]"
-          TopLeft="589.25,1142">
+          TopLeft="541.25,768">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -788,7 +557,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 12]"
-          TopLeft="586.5,1215">
+          TopLeft="538.5,841">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -809,8 +578,42 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="580.25,377">
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="844,244">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-248.833333333333,152"
+              Start="0,0"
+              End="-248.833333333333,144.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,107.167701863354" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,107.167701863354"
+                    Point2="0,111.167701863354"
+                    Point3="-4,111.167701863354" />
+                  <mssgle:LineSegment
+                    End="-244.833333333333,111.167701863354" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-244.833333333333,111.167701863354"
+                    Point2="-248.833333333333,111.167701863354"
+                    Point3="-248.833333333333,115.167701863354" />
+                  <mssgle:LineSegment
+                    End="-248.833333333333,144.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="546,438">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -831,118 +634,8 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="580,469">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45"
-              Start="0,0"
-              End="0,37.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="582.75,556">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34"
-              Start="0,0"
-              End="0,26.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="585.5,632">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43"
-              Start="0,0"
-              End="0,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="586.75,717">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,58"
-              Start="0,0"
-              End="0,50.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,50.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="591,817">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45"
-              Start="0,0"
-              End="0,37.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
-          TopLeft="593.75,904">
+          TopLeft="545.75,530">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -964,7 +657,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
-          TopLeft="591.5,990">
+          TopLeft="543.5,616">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -984,36 +677,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="123,42"
-          Id="Package\Delete all"
-          TopLeft="496,62" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 14]"
-          TopLeft="538.333333333333,104">
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="696,242">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-73.8333333333334,74"
+              EndConnector="-125.666666666667,154"
               Start="0,0"
-              End="-73.8333333333334,66.5">
+              End="-125.666666666667,146.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.1701444622793" />
+                    End="0,87.4678436317781" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26.1701444622793"
-                    Point2="0,30.1701444622793"
-                    Point3="-4,30.1701444622793" />
+                    Point1="0,87.4678436317781"
+                    Point2="0,91.4678436317781"
+                    Point3="-4,91.4678436317781" />
                   <mssgle:LineSegment
-                    End="-69.8333333333334,30.1701444622793" />
+                    End="-121.666666666667,91.4678436317781" />
                   <mssgle:CubicBezierSegment
-                    Point1="-69.8333333333334,30.1701444622793"
-                    Point2="-73.8333333333334,30.1701444622793"
-                    Point3="-73.8333333333334,34.1701444622793" />
+                    Point1="-121.666666666667,91.4678436317781"
+                    Point2="-125.666666666667,91.4678436317781"
+                    Point3="-125.666666666667,95.4678436317781" />
                   <mssgle:LineSegment
-                    End="-73.8333333333334,66.5" />
+                    End="-125.666666666667,146.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1022,32 +711,100 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="116,42"
+          Id="Package\Courses"
+          TopLeft="187,195" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 13]"
-          TopLeft="576.666666666667,104">
+          Id="Package.PrecedenceConstraints[Constraint 17]"
+          TopLeft="245,237">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="110.333333333333,71"
+              EndConnector="250.833333333333,159"
               Start="0,0"
-              End="110.333333333333,63.5">
+              End="250.833333333333,151.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.9470304975923" />
+                    End="0,112.287267080745" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24.9470304975923"
-                    Point2="0,28.9470304975923"
-                    Point3="4,28.9470304975923" />
+                    Point1="0,112.287267080745"
+                    Point2="0,116.287267080745"
+                    Point3="4,116.287267080745" />
                   <mssgle:LineSegment
-                    End="106.333333333333,28.9470304975923" />
+                    End="246.833333333333,116.287267080745" />
                   <mssgle:CubicBezierSegment
-                    Point1="106.333333333333,28.9470304975923"
-                    Point2="110.333333333333,28.9470304975923"
-                    Point3="110.333333333333,32.9470304975923" />
+                    Point1="246.833333333333,116.287267080745"
+                    Point2="250.833333333333,116.287267080745"
+                    Point3="250.833333333333,120.287267080745" />
                   <mssgle:LineSegment
-                    End="110.333333333333,63.5" />
+                    End="250.833333333333,151.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="113,42"
+          Id="Package\Classes"
+          TopLeft="332,198" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 16]"
+          TopLeft="388.5,240">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="132.166666666667,156"
+              Start="0,0"
+              End="132.166666666667,148.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,88.6557377049181" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,88.6557377049181"
+                    Point2="0,92.6557377049181"
+                    Point3="4,92.6557377049181" />
+                  <mssgle:LineSegment
+                    End="128.166666666667,92.6557377049181" />
+                  <mssgle:CubicBezierSegment
+                    Point1="128.166666666667,92.6557377049181"
+                    Point2="132.166666666667,92.6557377049181"
+                    Point3="132.166666666667,96.6557377049181" />
+                  <mssgle:LineSegment
+                    End="132.166666666667,148.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="127,42"
+          Id="Package\Classroom"
+          TopLeft="477,200" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 15]"
+          TopLeft="543,242">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,154"
+              Start="0,0"
+              End="0,146.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,146.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1061,10 +818,6 @@
   </Package>
   <ConnectionManager
     design-time-name="Package.ConnectionManagers[DESKTOP-84D09FT]">
-    <ProjectReferenceName></ProjectReferenceName>
-  </ConnectionManager>
-  <ConnectionManager
-    design-time-name="Package.ConnectionManagers[DESKTOP-84D09FT.SchoolDW]">
     <ProjectReferenceName></ProjectReferenceName>
   </ConnectionManager>
 </Objects>]]></DTS:DesignTimeProperties>

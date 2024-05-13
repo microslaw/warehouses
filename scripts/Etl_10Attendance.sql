@@ -1,5 +1,6 @@
-
+USE schoolDW
 GO
+
 CREATE VIEW vEtlAttendance AS
 (
 SELECT DimStudents.StudentID, DimTeacher.TeacherID, DimCircumstances.CircumstancesID, DimTime.TimeID, DimDate.DateID  

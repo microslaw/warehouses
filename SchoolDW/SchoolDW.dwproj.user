@@ -4,7 +4,7 @@
       <Name>Development</Name>
       <Options>
         <TargetServer>localhost</TargetServer>
-        <TargetDatabase>SchoolDW</TargetDatabase>
+        <TargetDatabase>schoolDW</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
           <ObjectType>Current</ObjectType>

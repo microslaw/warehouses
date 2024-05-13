@@ -1,3 +1,6 @@
+USE schoolDW
+GO
+
 DROP VIEW IF EXISTS ClassCounts
 DROP VIEW IF EXISTS MissingStudents
 DROP VIEW IF EXISTS vEtlMeeting

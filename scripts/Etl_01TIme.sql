@@ -1,3 +1,5 @@
+USE schoolDW
+GO
 
 Declare @CurrentHour int = 0;
 

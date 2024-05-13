@@ -1,3 +1,6 @@
+USE schoolDW
+GO
+
 DROP TABLE IF EXISTS Attendance
 
 CREATE Table Attendance

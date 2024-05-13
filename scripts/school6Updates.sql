@@ -1,3 +1,6 @@
+USE schoolDB
+GO
+
 Update Class SET tID = '1' WHERE ClassName = 'A18';
 Update Class SET tID = '4' WHERE ClassName = 'A15';
 Update Class SET tID = '6' WHERE ClassName = 'B14';

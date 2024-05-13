@@ -1,3 +1,12 @@
+
+BEGIN TRY
+use master
+alter database schoolDB set single_user with rollback immediate
+drop database schoolDB
+END TRY
+BEGIN CATCH
+END CATCH
+
 CREATE DATABASE schoolDB collate Latin1_General_CI_AS;
 GO
 
