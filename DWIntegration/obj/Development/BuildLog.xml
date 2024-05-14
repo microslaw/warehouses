@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>DWIntegration</Name>
-    <LastWriteTime>2024-05-13T21:10:51.4073589Z</LastWriteTime>
+    <LastWriteTime>2024-05-14T18:14:19.6066663Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -23,7 +23,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>2InsertSnapshot2.dtsx</Name>
-      <LastWriteTime>2024-05-13T17:23:39.3655186Z</LastWriteTime>
+      <LastWriteTime>2024-05-14T17:04:16.4199486Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

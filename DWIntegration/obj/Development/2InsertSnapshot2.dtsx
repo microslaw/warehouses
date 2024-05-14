@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="2InsertSnapshot2"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{ADB157BB-FC48-4EB4-A799-EDDADCAB8597}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{C4637AB6-E857-4ADC-AA76-7D639CD0787B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-84D09FT;Initial Catalog=master;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-2InsertSnapshot2-{C088F10A-7CEF-44F8-B795-BBAD542EB827}DESKTOP-84D09FT.master;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=DESKTOP-84D09FT;Initial Catalog=master;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-2InsertSnapshot2-{C088F10A-7CEF-44F8-B795-BBAD542EB827}DESKTOP-84D09FT.master;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager

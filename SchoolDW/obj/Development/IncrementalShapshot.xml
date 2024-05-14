@@ -89,7 +89,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>opnL32CFxKQIj1Z4X7zCFqhRF1s=13/05/2024 23:12:1213/05/2024 16:16:22OBU+LScbhFML9PNE8zvMQBHwQWQ=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>+pnE3V3BHDRMeqId1shnlQQcRLg=14/05/2024 22:36:5013/05/2024 16:16:22OBU+LScbhFML9PNE8zvMQBHwQWQ=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
         <ID>
           <String>School DW</String>
         </ID>
@@ -106,5 +106,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-05-13T22:22:33.166667Z</LastDeployed>
+  <LastDeployed>2024-05-14T20:36:57.856667Z</LastDeployed>
 </DeploymentSnapshot>

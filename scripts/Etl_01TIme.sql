@@ -27,10 +27,3 @@ While @CurrentHour < 24
 	Set @CurrentHour = @CurrentHour + 1
 	End
 
-
-
-
-
-
-
-SELECT * FROM DimTime
