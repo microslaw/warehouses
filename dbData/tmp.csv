@@ -1,0 +1,23 @@
+SID, PEsel, Name, Surname, District, Gender, is current
+1,07271548973,Steve,Austin,Przymorze,Male,1
+2,07282434112,Whitney,Smith,Gdynia centrum,Female,1
+3,08291926174,Terri,Smith,Stocznia,Female,1
+4,08320779492,Sharon,Garrett,Orunia,Female,1
+5,09222518675,Jeffery,Foster,Orunia,Male,1
+6,09252489104,Stephanie,Ramirez,Wrzeszcz,Female,1
+7,09272969076,Nicholas,Bell,Zaspa,Other,1
+8,10211749969,Joshua,Rogers,Przymorze,Male,1
+9,11250698154,Samantha,Proctor,Gdynia centrum,Female,0
+10,11302437089,Gabriel,Mccoy,Wejherowo,Male,1
+11,12210432447,Joshua,Jones,Zaspa,Male,0
+12,12290831097,Tyler,Burton,Gdansk centrum,Male,1
+13,07262417489,Jeffrey,Oneill,Wejherowo,Male,1
+14,08211367426,Jessica,Brooks,Gdynia centrum,Other,1
+15,08290852640,Jessica,Hayes,Stocznia,Other,1
+16,11230637218,Pamela,Ford,Wrzeszcz,Female,1
+17,11291902003,Samuel,Middleton,Zaspa,Male,1
+18,11302699196,Alison,Silva,Orlowo,Female,1
+19,11321289413,Charles,Smith,Redlowo,Male,1
+20,12240932146,Felicia,Thompson,Orunia,Female,1
+21,11250698154,Samantha,Proctor,Wejherowo,Female,1
+22,12210432447,Joshua,Jones,Reda,Male,1

@@ -28,6 +28,9 @@ JOIN DimClass ON DimClass.ClassName = Class.ClassName
 WHERE DimStudents.IsCurrent = 1
 
 GO
+DELETE FROM FExams
+
+GO
 MERGE INTO FExams AS TT
 USING vETLFExams AS ST
 ON     

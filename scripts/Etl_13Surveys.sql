@@ -19,6 +19,7 @@ FROM schoolDB.dbo.Surveys
     JOIN DimDate ON CONVERT(VARCHAR(10), Meeting.[Date], 111) = CONVERT(VARCHAR(10), DimDate.[Date], 111)
 JOIN DimStudents ON DimStudents.Pesel = Students.Pesel
 JOIN DimClass ON DimClass.ClassName = Class.ClassName
+WHERE DimStudents.IsCurrent = 1
 
 GO
 MERGE INTO FSurveys AS TT

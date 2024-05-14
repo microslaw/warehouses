@@ -20,6 +20,7 @@ WHERE ((Attendance.Excused = 'True' AND DimCircumstances.Excused = 'Yes') OR
 	((Attendance.Late = 'True' AND DimCircumstances.Late = 'Yes') OR
 	(Attendance.Late = 'False' AND DimCircumstances.Late = 'No'))
 	)
+	
 GO
 
 SELECT * FROM vEtlAttendance
