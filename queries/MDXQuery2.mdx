@@ -1,0 +1,6 @@
+--Compare average survey scores between specializations.
+SELECT
+    [Dim Class].[Specialization].MEMBERS ON ROWS,
+    [Measures].[Average_score_survey] ON COLUMNS
+FROM
+    [School DW];

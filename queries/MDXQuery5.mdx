@@ -1,0 +1,6 @@
+--Compare average scores of each gender category.
+SELECT
+    [Dim Students].[Gender].MEMBERS ON ROWS,
+    [Measures].[Average_score_exam] ON COLUMNS
+FROM
+    [School DW];

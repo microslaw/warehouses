@@ -54,3 +54,34 @@ SELECT COUNT(*) FROM schoolDW.dbo.FExams
 
 SELECT * FROM schoolDB.dbo.Exams
 WHERE mID NOT IN (SELECT mID from schoolDB.dbo.Meeting)
+
+
+SELECT DISTINCT Date FROM schoolDW.dbo.FExams
+JOIN schoolDW.dbo.DimDate ON DimDate.DateID = FExams.DateID
+
+
+SELECT COUNT(*) FROM schoolDB.dbo.Class
+SELECT COUNT(*) FROM schoolDW.dbo.DimClass
+
+
+SELECT COUNT(*) FROM schoolDB.dbo.Classroom
+SELECT COUNT(*) FROM schoolDW.dbo.DimClassroom
+
+SELECT COUNT(*) FROM schoolDB.dbo.Course
+SELECT COUNT(*) FROM schoolDW.dbo.DimCourse
+
+SELECT COUNT(*) FROM schoolDB.dbo.Exams
+SELECT COUNT(*) FROM schoolDW.dbo.FExams
+
+SELECT COUNT(*) FROM schoolDB.dbo.Attendance
+SELECT * FROM schoolDW.dbo.FAttendance
+
+
+
+SELECT * FROM Exams JOIN Meeting ON Exams.mID = Meeting.mID
+
+
+
+
+
+

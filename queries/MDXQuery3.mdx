@@ -1,0 +1,19 @@
+--From which city districts the students with the highest average scores are?
+SELECT 
+  [Measures].[Average_score_exam] ON COLUMNS,
+  ORDER(
+    [Dim Students].[City District].Members, 
+    [Measures].[Average_score_exam], 
+    BDESC
+  ) ON ROWS
+FROM [School DW]
+
+-- Only top 3 
+SELECT 
+  [Measures].[Average_score_exam] ON COLUMNS,
+  TOPCOUNT(
+    [Dim Students].[City District].Members, 
+    3,
+    [Measures].[Average_score_exam]
+  ) ON ROWS
+FROM [School DW]
