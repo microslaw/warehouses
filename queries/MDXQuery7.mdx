@@ -1,0 +1,8 @@
+--Give the average exam grade of students from Gdynia centrum.
+SELECT
+    [Dim Students].[Student ID].MEMBERS ON Rows,
+    [Measures].[Average_score_exam] ON Columns
+FROM
+    [School Dw]
+WHERE
+    [Dim Students].[City District].[Gdynia centrum];
