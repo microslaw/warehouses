@@ -95,6 +95,7 @@
           <ID>Room ID</ID>
           <Name>Room ID</Name>
           <Usage>Key</Usage>
+          <EstimatedCount>10</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -236,6 +237,7 @@
           <ID>Course ID</ID>
           <Name>Course ID</Name>
           <Usage>Key</Usage>
+          <EstimatedCount>163</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -617,6 +619,7 @@
           <ID>Class ID</ID>
           <Name>Class ID</Name>
           <Usage>Key</Usage>
+          <EstimatedCount>17</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -647,6 +650,7 @@
         <Attribute>
           <ID>Class Name</ID>
           <Name>Class Name</Name>
+          <EstimatedCount>17</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -818,6 +822,7 @@
           <ID>Date ID</ID>
           <Name>Date ID</Name>
           <Usage>Key</Usage>
+          <EstimatedCount>23437</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -885,6 +890,7 @@
           <ID>Year</ID>
           <Name>Year</Name>
           <Type>Years</Type>
+          <EstimatedCount>66</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -902,6 +908,7 @@
           <ID>Month</ID>
           <Name>Month</Name>
           <Type>Months</Type>
+          <EstimatedCount>12</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -1297,6 +1304,7 @@
           <ID>Teacher ID</ID>
           <Name>Teacher ID</Name>
           <Usage>Key</Usage>
+          <EstimatedCount>20</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -1541,6 +1549,7 @@
           <ID>Time ID</ID>
           <Name>Time ID</Name>
           <Usage>Key</Usage>
+          <EstimatedCount>24</EstimatedCount>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -1629,7 +1638,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="64" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-13310" scrolltop="8152" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="85" x="17639" y="11165" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="64" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-13310" scrolltop="-64" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="85" x="38206" y="27014" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01ee0000900180380100065461686f6d61" />
                 </font>
@@ -2252,6 +2261,7 @@
             </Attribute>
             <Attribute>
               <AttributeID>Class Name</AttributeID>
+              <AggregationUsage>Full</AggregationUsage>
             </Attribute>
             <Attribute>
               <AttributeID>Specialization</AttributeID>
@@ -2277,6 +2287,7 @@
             </Attribute>
             <Attribute>
               <AttributeID>Month</AttributeID>
+              <AggregationUsage>None</AggregationUsage>
             </Attribute>
             <Attribute>
               <AttributeID>Month Number</AttributeID>
@@ -2513,11 +2524,32 @@
                 <DataSourceViewID>School DW</DataSourceViewID>
                 <TableID>dbo_FExams</TableID>
               </Source>
-              <StorageMode>Molap</StorageMode>
+              <StorageMode>Rolap</StorageMode>
               <CurrentStorageMode>Molap</CurrentStorageMode>
               <ProcessingMode>Regular</ProcessingMode>
+              <ProactiveCaching>
+                <SilenceInterval>-PT1S</SilenceInterval>
+                <Latency>PT0S</Latency>
+                <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                <Enabled>true</Enabled>
+                <AggregationStorage>MolapOnly</AggregationStorage>
+                <Source xsi:type="ProactiveCachingInheritedBinding">
+                  <NotificationTechnique>Server</NotificationTechnique>
+                </Source>
+              </ProactiveCaching>
             </Partition>
           </Partitions>
+          <ProactiveCaching>
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <AggregationStorage>MolapOnly</AggregationStorage>
+            <Source xsi:type="ProactiveCachingInheritedBinding">
+              <NotificationTechnique>Server</NotificationTechnique>
+            </Source>
+          </ProactiveCaching>
         </MeasureGroup>
         <MeasureGroup>
           <ID>F Attendance</ID>
@@ -2718,6 +2750,7 @@
             </Measure>
           </Measures>
           <StorageMode>Molap</StorageMode>
+          <EstimatedRows>23436</EstimatedRows>
           <ProcessingMode>Regular</ProcessingMode>
           <Dimensions>
             <Dimension xsi:type="RegularMeasureGroupDimension">
@@ -2844,8 +2877,985 @@
               <StorageMode>Molap</StorageMode>
               <CurrentStorageMode>Molap</CurrentStorageMode>
               <ProcessingMode>Regular</ProcessingMode>
+              <EstimatedRows>23436</EstimatedRows>
+              <AggregationDesignID>ClassAggregation</AggregationDesignID>
             </Partition>
           </Partitions>
+          <AggregationDesigns>
+            <AggregationDesign>
+              <ID>ClassAggregation</ID>
+              <Name>ClassAggregation</Name>
+              <CreatedTimestamp>2024-05-20T18:29:39.16Z</CreatedTimestamp>
+              <LastSchemaUpdate>2024-05-20T18:29:39.16Z</LastSchemaUpdate>
+              <EstimatedRows>23436</EstimatedRows>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Room ID</AttributeID>
+                      <EstimatedCount>10</EstimatedCount>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Room Number</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Floor</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Teacher ID</AttributeID>
+                      <EstimatedCount>20</EstimatedCount>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Pesel</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Teacher Name</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Teacher Surname</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>City District</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Gender</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Is Current</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Class</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Class ID</AttributeID>
+                      <EstimatedCount>17</EstimatedCount>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Class Name</AttributeID>
+                      <EstimatedCount>17</EstimatedCount>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Specialization</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Is Current</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Course</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Course ID</AttributeID>
+                      <EstimatedCount>163</EstimatedCount>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>c ID</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Name</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date ID</AttributeID>
+                      <EstimatedCount>23437</EstimatedCount>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Date</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Year</AttributeID>
+                      <EstimatedCount>66</EstimatedCount>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Month</AttributeID>
+                      <EstimatedCount>12</EstimatedCount>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Month Number</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Day Number</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Day Of Week</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Day Of Week Number</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Working Day</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Exam Day</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Dim Time</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Time ID</AttributeID>
+                      <EstimatedCount>24</EstimatedCount>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Hour</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Time Of Day</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+              <Aggregations>
+                <Aggregation>
+                  <ID>Aggregation 0</ID>
+                  <Name>Aggregation 0</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Room ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Year</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 1</ID>
+                  <Name>Aggregation 1</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Class ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Year</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 2</ID>
+                  <Name>Aggregation 2</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Room ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Class ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 3</ID>
+                  <Name>Aggregation 3</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Teacher ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Year</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 4</ID>
+                  <Name>Aggregation 4</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Room ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 5</ID>
+                  <Name>Aggregation 5</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Room ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Teacher ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 6</ID>
+                  <Name>Aggregation 6</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Room ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Time ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 7</ID>
+                  <Name>Aggregation 7</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Year</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Time ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 8</ID>
+                  <Name>Aggregation 8</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Room ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Course ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 9</ID>
+                  <Name>Aggregation 9</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Time ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation a</ID>
+                  <Name>Aggregation a</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Year</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation b</ID>
+                  <Name>Aggregation b</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Class ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation c</ID>
+                  <Name>Aggregation c</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Teacher ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation d</ID>
+                  <Name>Aggregation d</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation e</ID>
+                  <Name>Aggregation e</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Course ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation f</ID>
+                  <Name>Aggregation f</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Teacher ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Class ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 10</ID>
+                  <Name>Aggregation 10</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Class ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Time ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 11</ID>
+                  <Name>Aggregation 11</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Teacher ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Time ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 12</ID>
+                  <Name>Aggregation 12</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Class ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Course ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 13</ID>
+                  <Name>Aggregation 13</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Teacher ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Course ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 14</ID>
+                  <Name>Aggregation 14</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Room ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Teacher ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Class ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 15</ID>
+                  <Name>Aggregation 15</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Course ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Time ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 16</ID>
+                  <Name>Aggregation 16</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Room ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Class ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Time ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 17</ID>
+                  <Name>Aggregation 17</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Room ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Teacher ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Time ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+                <Aggregation>
+                  <ID>Aggregation 18</ID>
+                  <Name>Aggregation 18</Name>
+                  <Dimensions>
+                    <Dimension>
+                      <CubeDimensionID>Dim Classroom</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Teacher</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Teacher ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Class</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Class ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Course</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Date</CubeDimensionID>
+                    </Dimension>
+                    <Dimension>
+                      <CubeDimensionID>Dim Time</CubeDimensionID>
+                      <Attributes>
+                        <Attribute>
+                          <AttributeID>Time ID</AttributeID>
+                        </Attribute>
+                      </Attributes>
+                    </Dimension>
+                  </Dimensions>
+                </Aggregation>
+              </Aggregations>
+            </AggregationDesign>
+          </AggregationDesigns>
         </MeasureGroup>
         <MeasureGroup>
           <ID>F Surveys</ID>
@@ -2972,12 +3982,12 @@ The CALCULATE command controls the aggregation of leaf cells in the cube.
 If the CALCULATE command is deleted or modified, the data within the cube is affected.
 You should edit this command only if you manually specify how the cube is aggregated.
 */
-CALCULATE;  
+CALCULATE;
 CREATE MEMBER CURRENTCUBE.[Measures].Average_score_exam
- AS [Measures].[Score F Exams] / [Measures].[F Exams Count], 
-VISIBLE = 1  ;  
+ AS [Measures].[Score F Exams] / [Measures].[F Exams Count],
+VISIBLE = 1  ;
 CREATE MEMBER CURRENTCUBE.[Measures].Average_score_survey
- AS [Measures].[Score F Surveys] / [Measures].[F Surveys Count], 
+ AS [Measures].[Score F Surveys] / [Measures].[F Surveys Count],
 VISIBLE = 1  ; </Text>
             </Command>
           </Commands>
