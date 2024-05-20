@@ -1,6 +1,6 @@
 ﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
   <Target>
-    <Database>SchoolDW</Database>
+    <Database>ksiegarnia</Database>
     <Server>DESKTOP-84D09FT</Server>
     <ConnectionString>Data Source=DESKTOP-84D09FT;Timeout=0</ConnectionString>
   </Target>
@@ -19,92 +19,85 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>HomTzwlE2zrcJHwYefHF9bcqeLs=15/05/2024 18:16:4713/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>lSOAbGEm91Nb0pPMDr8UALrRBag=20/05/2024 18:15:3920/05/2024 18:10:26</TimeStamp>
         <ID>
-          <String>School DW</String>
+          <String>Ksiegarnia Ext</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>b7mqlKrEr7L8uFBIEgysz7QxUR8=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>SH+PMXIb//GU6pGBDycFih3+XEc=22/05/2019 14:20:0420/05/2024 18:10:26</TimeStamp>
         <ID>
-          <String>School DW</String>
+          <String>Ksiegarnia Ext</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>82yd+O+PLwGK6FeaKsivzKPBLmI=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>NVu8edL1UK7NpOAUNSWNlNBhR64=22/05/2019 14:42:3120/05/2024 18:10:26</TimeStamp>
         <ID>
-          <String>Dim Classroom</String>
+          <String>Ksiazka</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>TmF+7Ihq79EbUQMj1tgKYyBcsdg=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>GYwxnONxgaio8v0DoAsCjFTYRoo=22/05/2019 14:42:3120/05/2024 18:10:26</TimeStamp>
         <ID>
-          <String>Dim Course</String>
+          <String>Czas</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Iz9o0PpWVrtZ0FdHWsp3h04O7Tk=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>U37fOeVMIVuSxU6cwkCdGZsOqoY=22/05/2019 14:46:5020/05/2024 18:10:26</TimeStamp>
         <ID>
-          <String>Dim Students</String>
+          <String>Sprzedawca</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Mck2I8s+pDqYalqtK3xZDWYrj68=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>BAR7/o8yzVd4xMjX0hw6EkqNcmQ=22/05/2019 14:46:5020/05/2024 18:10:26</TimeStamp>
         <ID>
-          <String>Dim Class</String>
+          <String>Smieci</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>O58rNoFepeSpUsCo0Lw4zs/3XTA=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>yD3RUbU/AdYOhKohycOxmkXqC0I=22/05/2019 14:42:3120/05/2024 18:10:26</TimeStamp>
         <ID>
-          <String>Dim Date</String>
+          <String>Data</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Q1pu8r0CTdHv4O9TK0vc2exoRy4=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>LWFzLVglbwDAIV75+6z5JC22s3o=22/05/2019 14:46:5020/05/2024 18:10:26</TimeStamp>
         <ID>
-          <String>Dim Circumstances</String>
+          <String>Autor</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>iO+2gTxq4NwiG+CHyDI1969IuBk=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>6YSYB8TpSaBNADb82sdl0Xv499s=22/05/2019 14:28:3120/05/2024 18:10:26</TimeStamp>
         <ID>
-          <String>Dim Teacher</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>eoxdXbiftCYOulj1He9HOLz69us=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
-        <ID>
-          <String>Dim Time</String>
+          <String>Sprzedaz Ksiazki</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>7ixDhK5d3w7cENpV53Rb/YaAQmk=20/05/2024 20:32:5113/05/2024 16:16:22Pq+P56twBet3W3f5IDTum3/7G1o=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>N2SyG+Tj86g0LFvhtLzcA1RLRwM=05/06/2019 12:59:0420/05/2024 18:10:262hDVqrJuo7Vr5IO862uvElF0QRk=05/06/2019 12:59:0420/05/2024 18:10:26</TimeStamp>
         <ID>
-          <String>School DW</String>
+          <String>Ksiegarnia Ext</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>sz46IkSnfuv8mu9OU8X3T0RN7uI=13/05/2024 23:10:5113/05/2024 16:16:22</TimeStamp>
+      <TimeStamp>lajB1CN21saAVahxAnR/ttxd9UE=05/06/2019 11:22:3920/05/2024 18:10:26</TimeStamp>
       <ID>
-        <String>SchoolDW</String>
+        <String>ksiegarnia</String>
       </ID>
     </DatabaseSnapshot>
     <Granularity>Coarse</Granularity>
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-05-20T18:32:54.94Z</LastDeployed>
+  <LastDeployed>2024-05-20T16:15:45.26Z</LastDeployed>
 </DeploymentSnapshot>
