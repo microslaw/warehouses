@@ -1,0 +1,28 @@
+-- Compare average Exam score in current and previous month
+WITH MEMBER [Prev month amount] AS '(PARALLELPERIOD([Dim Date].[DateHierarchy].[Month]
+, 1, [Dim Date].[DateHierarchy].CurrentMember), [Measures].[Average_score_exam])'
+SELECT 
+	CrossJoin(
+		[Dim Date].[DateHierarchy].[Year].[2021].[May],
+		[Dim Class].[Class ID].Members
+	) ON ROWS,
+	{
+	[Measures].[Average_score_exam], [Prev month amount]
+	} ON COLUMNS
+FROM 
+	[School Dw];
+
+--without null values
+WITH MEMBER [Prev month amount] AS '(PARALLELPERIOD([Dim Date].[DateHierarchy].[Month]
+, 1, [Dim Date].[DateHierarchy].CurrentMember), [Measures].[Average_score_exam])'
+SELECT 
+  NON EMPTY CrossJoin(
+    [Dim Date].[DateHierarchy].[Year].[2021].[May],
+    [Dim Class].[Class ID].MEMBERS
+  ) ON ROWS,
+  NON EMPTY {
+    [Measures].[Average_score_exam],
+    [Measures].[Prev month amount]
+  } ON COLUMNS
+FROM 
+  [School Dw];

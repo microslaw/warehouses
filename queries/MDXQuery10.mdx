@@ -1,0 +1,25 @@
+--check how many exams have over 40%(passed) 
+
+
+WITH
+    MEMBER [Measures].[Pass_Exams_Count] AS
+        COUNT(
+            FILTER(
+                [Dim Students].[Student ID].MEMBERS,
+                ([Measures].[Score F Exams] * 2) >= 40 
+            )
+        )
+    MEMBER [Measures].[Fail_Exams_Count] AS
+        COUNT(
+            FILTER(
+                [Dim Students].[Student ID].MEMBERS,
+                ([Measures].[Score F Exams] * 2) < 40 
+            )
+        )
+SELECT
+    {[Measures].[Pass_Exams_Count], [Measures].[Fail_Exams_Count]} ON COLUMNS
+FROM [School Dw];
+
+
+
+

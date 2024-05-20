@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="0CreateAndSeedDBs"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{A25C19AD-24AB-44A6-9FF3-342FF6562002}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{F522D427-F383-45DA-9293-0A9FFF29FB02}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-84D09FT;Initial Catalog=master;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-0CreateAndSeedDBs-{947C0356-E6D5-4B9B-8CE0-E74401425FAA}DESKTOP-84D09FT.master;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=DESKTOP-KPATS2M\SERVER2;Initial Catalog=master;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-0CreateAndSeedDBs-{947C0356-E6D5-4B9B-8CE0-E74401425FAA}DESKTOP-84D09FT.master;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -157,9 +157,13 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="149,42"
+          Size="149.333333333334,42"
           Id="Package\Create new DB"
           TopLeft="577,177" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Create new DB for DW"
+          TopLeft="560,411" />
         <NodeLayout
           Size="194,42"
           Id="Package\Insert 1st snapshot data"
@@ -186,10 +190,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Create new DB for DW"
-          TopLeft="560,411" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="655,327">

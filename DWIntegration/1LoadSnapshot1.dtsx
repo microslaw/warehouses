@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{1C3B8E69-9336-4FAE-9F00-D250294A6BF6}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{1BABB438-0A4F-4C6C-BFBC-40822458F71E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,12 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Data Source=DESKTOP-84D09FT;User ID=milosz.grunwald@gmail.com;Provider=MSOLAP.8;Impersonation Level=Impersonate;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA50OqZ/Tp20WzP74mvIWnIwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABtCh38dm4ghepLMxNI+wqPU80wrsjKvz27qY6p9R/XwgAAAAAOgAAAAAIAACAAAAAYcc3fYWt7pDWUryYFripOUUUM8AzRHoZ3B+8p1Hpz9SAAAABtNx01jDUMAG5iJvBAAUEuv87sMW8XU9liNcvUu/HOVkAAAAAJLdt37piswrVfIWVXGHr+7NO4Wnm8mjZzqk881klfJN1bphUXy58gKMB8lVMJdsmGbZS83K7T0+Ba462HuNMS</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=DESKTOP-84D09FT;User ID=milosz.grunwald@gmail.com;Provider=MSOLAP.8;Impersonation Level=Impersonate;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -42,7 +37,24 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-84D09FT;Initial Catalog=master;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{28EACFC4-6282-43DD-9CE9-0879B55978A4}DESKTOP-84D09FT.master;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=DESKTOP-KPATS2M\SERVER2;Initial Catalog=master;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{28EACFC4-6282-43DD-9CE9-0879B55978A4}DESKTOP-84D09FT.master;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-KPATS2M\SERVER2.SchoolDW]"
+      DTS:CreationName="MSOLAP100"
+      DTS:DTSID="{4449EBBD-B8AA-42EB-B816-5AD100D38329}"
+      DTS:ObjectName="DESKTOP-KPATS2M\SERVER2.SchoolDW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Data Source=DESKTOP-KPATS2M\SERVER2;User ID=milosz.grunwald@gmail.com;Initial Catalog=SchoolDW;Provider=MSOLAP.8;Impersonation Level=Impersonate;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7ZHJGNyGUUinN8M8qGiJ4QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABM8j8/mXBGqFXw2j9wLHf5/zlw/ZWyJJyBBI9GQSUlRgAAAAAOgAAAAAIAACAAAADplW530aBHr51oMUPCTR2iBKRPBBa5yHJW1gLYbCOPuCAAAACRZyG4f/TohH1YPFzMN8+SnlvXyitLFQK1H62zEdKp5EAAAACN3s1fmYPXy44l0FWppfNf44j8kFYe7SuC7fumKRqdglJaIy0p2+sfVhZvxMV9/dLtzFW75FgPoW7lEUnY3AD+</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -242,7 +254,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <ASProcessingData
-          ConnectionName="DESKTOP-84D09FT"
+          ConnectionName="DESKTOP-KPATS2M\SERVER2.SchoolDW"
           ProcessingCommands="&lt;Batch xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;SchoolDW&lt;/DatabaseID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;&lt;/Batch&gt;" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -327,7 +339,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Courses"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -345,7 +357,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Date"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -435,7 +447,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Students"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="6">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -674,7 +686,7 @@
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="237,42"
+          Size="237.333333333334,42"
           Id="Package\Analysis Services Processing Task"
           TopLeft="540,877" />
         <NodeLayout
@@ -682,15 +694,15 @@
           Id="Package\Attendance"
           TopLeft="599,570" />
         <NodeLayout
-          Size="147,42"
+          Size="146.666666666667,42"
           Id="Package\Circumstances"
           TopLeft="593,484" />
         <NodeLayout
-          Size="113,42"
+          Size="113.333333333334,42"
           Id="Package\Classes"
           TopLeft="611,192" />
         <NodeLayout
-          Size="127,42"
+          Size="126.666666666667,42"
           Id="Package\Classroom"
           TopLeft="756,194" />
         <NodeLayout
@@ -698,11 +710,11 @@
           Id="Package\Courses"
           TopLeft="466,189" />
         <NodeLayout
-          Size="101,42"
+          Size="101.333333333334,42"
           Id="Package\Date"
           TopLeft="180,190" />
         <NodeLayout
-          Size="123,42"
+          Size="122.666666666667,42"
           Id="Package\Delete all"
           TopLeft="603,54" />
         <NodeLayout
@@ -710,7 +722,7 @@
           Id="Package\Exams"
           TopLeft="607,654" />
         <NodeLayout
-          Size="157,42"
+          Size="157.333333333334,42"
           Id="Package\Load attendance"
           TopLeft="587,392" />
         <NodeLayout
@@ -722,9 +734,9 @@
           Id="Package\Students"
           TopLeft="915,194" />
         <NodeLayout
-          Size="111,42"
+          Size="110.666666666667,42"
           Id="Package\Survey"
-          TopLeft="603,795" />
+          TopLeft="603.624999990687,794.350000011623" />
         <NodeLayout
           Size="122,42"
           Id="Package\Teachers"
@@ -813,18 +825,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11]"
-          TopLeft="661.25,764">
+          TopLeft="661.47916666201,764">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,31"
+              EndConnector="0,30.3500000116229"
               Start="0,0"
-              End="0,23.5">
+              End="0,22.8500000116229">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.5" />
+                    End="0,22.8500000116229" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -835,18 +847,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 12]"
-          TopLeft="658.5,837">
+          TopLeft="658.812499995343,836.350000011623">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,40"
+              EndConnector="0,40.6499999883771"
               Start="0,0"
-              End="0,32.5">
+              End="0,33.1499999883771">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.5" />
+                    End="0,33.1499999883771" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1322,6 +1334,10 @@
   </Package>
   <ConnectionManager
     design-time-name="Package.ConnectionManagers[DESKTOP-84D09FT]">
+    <ProjectReferenceName></ProjectReferenceName>
+  </ConnectionManager>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[DESKTOP-KPATS2M\SERVER2.SchoolDW]">
     <ProjectReferenceName></ProjectReferenceName>
   </ConnectionManager>
   <ConnectionManager

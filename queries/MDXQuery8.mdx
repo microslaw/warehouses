@@ -1,0 +1,13 @@
+	--Top 5 Teachers with highest attendance rate on their meetings
+
+WITH
+    MEMBER [Measures].[AttendanceRate] AS
+   [Measures].[Attendance Real] / [Measures].[Attendance Max]
+
+SELECT
+        [Measures].[AttendanceRate] ON COLUMNS,
+        TOPCOUNT([Dim Teacher].[Teacher ID].MEMBERS, 5, [Measures].[AttendanceRate]) ON ROWS
+FROM
+    [School DW];
+
+
