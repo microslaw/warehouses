@@ -25,7 +25,7 @@
     </Hash>
   </Item>
   <Item name="Dim Circumstances.dim">
-    <Time>638512799624678484</Time>
+    <Time>638508108099760205</Time>
     <Hash length="20">
       <b>67</b>
       <b>90</b>
@@ -49,8 +49,8 @@
       <b>46</b>
     </Hash>
   </Item>
-  <Item name="Dim Time.dim">
-    <Time>638512799624798562</Time>
+  <Item name="Dim Classroom.dim">
+    <Time>638518339713809983</Time>
     <Hash length="20">
       <b>243</b>
       <b>108</b>
@@ -75,7 +75,7 @@
     </Hash>
   </Item>
   <Item name="School DW.ds">
-    <Time>638514505602964138</Time>
+    <Time>638518358880223939</Time>
     <Hash length="20">
       <b>207</b>
       <b>103</b>
@@ -99,33 +99,8 @@
       <b>111</b>
     </Hash>
   </Item>
-  <Item name="Dim Date.dim">
-    <Time>638514494772918681</Time>
-    <Hash length="20">
-      <b>51</b>
-      <b>165</b>
-      <b>184</b>
-      <b>49</b>
-      <b>54</b>
-      <b>85</b>
-      <b>54</b>
-      <b>202</b>
-      <b>192</b>
-      <b>248</b>
-      <b>127</b>
-      <b>30</b>
-      <b>160</b>
-      <b>247</b>
-      <b>152</b>
-      <b>237</b>
-      <b>184</b>
-      <b>232</b>
-      <b>219</b>
-      <b>132</b>
-    </Hash>
-  </Item>
   <Item name="Dim Class.dim">
-    <Time>638512799624690485</Time>
+    <Time>638518339714009978</Time>
     <Hash length="20">
       <b>49</b>
       <b>201</b>
@@ -150,34 +125,14 @@
     </Hash>
   </Item>
   <Item name="School DW.partitions">
-    <Time>638512799624895089</Time>
+    <Time>638518339713134846</Time>
     <Hash length="20">
       <b>62</b>
-      <b>45</b>
-      <b>39</b>
-      <b>27</b>
-      <b>132</b>
-      <b>83</b>
-      <b>11</b>
-      <b>244</b>
-      <b>243</b>
-      <b>68</b>
-      <b>243</b>
-      <b>59</b>
-      <b>204</b>
-      <b>64</b>
-      <b>17</b>
-      <b>240</b>
-      <b>65</b>
-      <b>100</b>
-    </Hash>
-  </Item>
-  <Item name="Dim Classroom.dim">
-    <Time>638512799624711648</Time>
-    <Hash length="20">
-      <b>131</b>
-      <b>11</b>
-      <b>61</b>
+      <b>175</b>
+      <b>143</b>
+      <b>231</b>
+      <b>171</b>
+      <b>112</b>
       <b>5</b>
       <b>235</b>
       <b>119</b>
@@ -195,7 +150,7 @@
     </Hash>
   </Item>
   <Item name="Dim Course.dim">
-    <Time>638512799624760658</Time>
+    <Time>638518339713909989</Time>
     <Hash length="20">
       <b>78</b>
       <b>97</b>
@@ -220,7 +175,7 @@
     </Hash>
   </Item>
   <Item name="School DW.dsv">
-    <Time>638512799624895089</Time>
+    <Time>638508108099760205</Time>
     <Hash length="20">
       <b>111</b>
       <b>185</b>
@@ -244,33 +199,8 @@
       <b>31</b>
     </Hash>
   </Item>
-  <Item name="Dim Teacher.dim">
-    <Time>638512799624798562</Time>
-    <Hash length="20">
-      <b>222</b>
-      <b>112</b>
-      <b>209</b>
-      <b>171</b>
-      <b>209</b>
-      <b>132</b>
-      <b>125</b>
-      <b>166</b>
-      <b>16</b>
-      <b>237</b>
-      <b>173</b>
-      <b>124</b>
-      <b>117</b>
-      <b>107</b>
-      <b>161</b>
-      <b>18</b>
-      <b>132</b>
-      <b>60</b>
-      <b>0</b>
-      <b>1</b>
-    </Hash>
-  </Item>
   <Item name="SchoolDW.database">
-    <Time>638512799624964486</Time>
+    <Time>638512386514253619</Time>
     <Hash length="20">
       <b>179</b>
       <b>62</b>
@@ -370,7 +300,7 @@
     </Hash>
   </Item>
   <Item name="Dim Students.dim">
-    <Time>638512799624798562</Time>
+    <Time>638508108099760205</Time>
     <Hash length="20">
       <b>35</b>
       <b>63</b>

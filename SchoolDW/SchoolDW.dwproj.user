@@ -3,12 +3,13 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>DESKTOP-KPATS2M\SERVER2</TargetServer>
+        <TargetServer>DESKTOP-84D09FT</TargetServer>
         <TargetDatabase>SchoolDW</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
           <ObjectType>Current</ObjectType>
         </StartObject>
+        <DeploymentMode>DeployAll</DeploymentMode>
       </Options>
     </Configuration>
   </Configurations>
