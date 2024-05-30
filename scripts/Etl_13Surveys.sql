@@ -20,10 +20,19 @@ FROM schoolDB.dbo.Surveys
 JOIN DimStudents ON DimStudents.Pesel = Students.Pesel
 JOIN DimClass ON DimClass.ClassName = Class.ClassName
 WHERE DimStudents.IsCurrent = 1
+GO
+
+CREATE VIEW vETLFSurveys2
+AS
+SELECT DISTINCT DateID, StudentID, ClassID, Max(Score) AS Score FROM vETLFSurveys
+GROUP BY DateID, StudentID, ClassID
+HAVING COUNT(*) = 1
+GO
+
 
 GO
 MERGE INTO FSurveys AS TT
-USING vETLFSurveys AS ST
+USING vETLFSurveys2 AS ST
 ON     
     TT.DateID = ST.DateID
     AND TT.StudentID = ST.StudentID
@@ -32,5 +41,7 @@ WHEN NOT MATCHED THEN
     INSERT
     VALUES (ST.Score, ST.StudentID, ST.DateID, ST.ClassID); 
 
-Drop view vETLFSurveys;
+SELECT COUNT(*) FROM FSurveys
 
+Drop view vETLFSurveys;
+Drop view vETLFSurveys2;

@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{1BABB438-0A4F-4C6C-BFBC-40822458F71E}">
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{97E63A96-47FB-412F-8568-B1144A419EC9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-KPATS2M\SERVER2;Initial Catalog=master;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{28EACFC4-6282-43DD-9CE9-0879B55978A4}DESKTOP-84D09FT.master;" />
+          DTS:ConnectionString="Data Source=DESKTOP-84D09FT;Initial Catalog=master;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{28EACFC4-6282-43DD-9CE9-0879B55978A4}DESKTOP-84D09FT.master;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -49,12 +49,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Data Source=DESKTOP-KPATS2M\SERVER2;User ID=milosz.grunwald@gmail.com;Initial Catalog=SchoolDW;Provider=MSOLAP.8;Impersonation Level=Impersonate;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7ZHJGNyGUUinN8M8qGiJ4QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABM8j8/mXBGqFXw2j9wLHf5/zlw/ZWyJJyBBI9GQSUlRgAAAAAOgAAAAAIAACAAAADplW530aBHr51oMUPCTR2iBKRPBBa5yHJW1gLYbCOPuCAAAACRZyG4f/TohH1YPFzMN8+SnlvXyitLFQK1H62zEdKp5EAAAACN3s1fmYPXy44l0FWppfNf44j8kFYe7SuC7fumKRqdglJaIy0p2+sfVhZvxMV9/dLtzFW75FgPoW7lEUnY3AD+</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=DESKTOP-KPATS2M\SERVER2;User ID=milosz.grunwald@gmail.com;Initial Catalog=SchoolDW;Provider=MSOLAP.8;Impersonation Level=Impersonate;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -303,7 +298,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Classes"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -321,7 +316,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Classroom"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -339,7 +334,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Courses"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="6">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -357,7 +352,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Date"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -447,7 +442,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Students"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -501,7 +496,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Time"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -686,7 +681,7 @@
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="237.333333333334,42"
+          Size="237,42"
           Id="Package\Analysis Services Processing Task"
           TopLeft="540,877" />
         <NodeLayout
@@ -694,15 +689,15 @@
           Id="Package\Attendance"
           TopLeft="599,570" />
         <NodeLayout
-          Size="146.666666666667,42"
+          Size="147,42"
           Id="Package\Circumstances"
           TopLeft="593,484" />
         <NodeLayout
-          Size="113.333333333334,42"
+          Size="113,42"
           Id="Package\Classes"
           TopLeft="611,192" />
         <NodeLayout
-          Size="126.666666666667,42"
+          Size="127,42"
           Id="Package\Classroom"
           TopLeft="756,194" />
         <NodeLayout
@@ -710,11 +705,11 @@
           Id="Package\Courses"
           TopLeft="466,189" />
         <NodeLayout
-          Size="101.333333333334,42"
+          Size="101,42"
           Id="Package\Date"
           TopLeft="180,190" />
         <NodeLayout
-          Size="122.666666666667,42"
+          Size="123,42"
           Id="Package\Delete all"
           TopLeft="603,54" />
         <NodeLayout
@@ -722,7 +717,7 @@
           Id="Package\Exams"
           TopLeft="607,654" />
         <NodeLayout
-          Size="157.333333333334,42"
+          Size="157,42"
           Id="Package\Load attendance"
           TopLeft="587,392" />
         <NodeLayout
@@ -734,7 +729,7 @@
           Id="Package\Students"
           TopLeft="915,194" />
         <NodeLayout
-          Size="110.666666666667,42"
+          Size="111,42"
           Id="Package\Survey"
           TopLeft="603.624999990687,794.350000011623" />
         <NodeLayout
