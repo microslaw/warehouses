@@ -4051,7 +4051,7 @@ VISIBLE = 1  ; </Text>
       <Name>School DW</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-KPATS2M\SERVER2;Integrated Security=SSPI;Initial Catalog=schoolDW</ConnectionString>
+      <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-84D09FT;Integrated Security=SSPI;Initial Catalog=schoolDW</ConnectionString>
       <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
       <ImpersonationInfo>
         <ImpersonationMode>ImpersonateAccount</ImpersonationMode>

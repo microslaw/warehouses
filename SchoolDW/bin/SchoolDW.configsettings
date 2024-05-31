@@ -3,7 +3,7 @@
     <DataSources>
       <DataSource>
         <ID>School DW</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-KPATS2M\SERVER2;Integrated Security=SSPI;Initial Catalog=schoolDW</ConnectionString>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-84D09FT;Integrated Security=SSPI;Initial Catalog=schoolDW</ConnectionString>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
           <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">milosz.grunwald@gmail.com</Account>

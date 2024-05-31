@@ -19,7 +19,7 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>z2dkrR4RQJJovJyzrlvhK2+euG8=16.05.2024 10:02:4014.05.2024 10:39:22</TimeStamp>
+        <TimeStamp>dEzyrkEY+Oo9BN5FeWfxim82BEk=30/05/2024 09:05:3913/05/2024 16:16:22</TimeStamp>
         <ID>
           <String>School DW</String>
         </ID>
@@ -106,5 +106,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-05-23T11:49:48.736667Z</LastDeployed>
+  <LastDeployed>2024-05-30T07:06:11.706667Z</LastDeployed>
 </DeploymentSnapshot>
