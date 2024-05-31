@@ -1,8 +1,8 @@
 ﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
   <Target>
     <Database>SchoolDW</Database>
-    <Server>DESKTOP-84D09FT</Server>
-    <ConnectionString>Data Source=DESKTOP-84D09FT;Timeout=0</ConnectionString>
+    <Server>DESKTOP-KPATS2M\SERVER2</Server>
+    <ConnectionString>Data Source=DESKTOP-KPATS2M\SERVER2;Timeout=0</ConnectionString>
   </Target>
   <Options>
     <TransactionalDeployment>false</TransactionalDeployment>
@@ -19,77 +19,77 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>z2dkrR4RQJJovJyzrlvhK2+euG8=20/05/2024 21:04:4813/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>z2dkrR4RQJJovJyzrlvhK2+euG8=16.05.2024 10:02:4014.05.2024 10:39:22</TimeStamp>
         <ID>
           <String>School DW</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>b7mqlKrEr7L8uFBIEgysz7QxUR8=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>b7mqlKrEr7L8uFBIEgysz7QxUR8=14.05.2024 10:39:2214.05.2024 10:39:22</TimeStamp>
         <ID>
           <String>School DW</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>82yd+O+PLwGK6FeaKsivzKPBLmI=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>82yd+O+PLwGK6FeaKsivzKPBLmI=20.05.2024 20:56:1414.05.2024 10:39:22</TimeStamp>
         <ID>
           <String>Dim Classroom</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>TmF+7Ihq79EbUQMj1tgKYyBcsdg=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>TmF+7Ihq79EbUQMj1tgKYyBcsdg=20.05.2024 20:56:1414.05.2024 10:39:22</TimeStamp>
         <ID>
           <String>Dim Course</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Iz9o0PpWVrtZ0FdHWsp3h04O7Tk=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>rUDr9NFvUjXjs63WdqJ7TOlvOR8=23.05.2024 13:44:0214.05.2024 10:39:22</TimeStamp>
         <ID>
           <String>Dim Students</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Mck2I8s+pDqYalqtK3xZDWYrj68=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>Mck2I8s+pDqYalqtK3xZDWYrj68=20.05.2024 20:56:1414.05.2024 10:39:22</TimeStamp>
         <ID>
           <String>Dim Class</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>O58rNoFepeSpUsCo0Lw4zs/3XTA=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>O58rNoFepeSpUsCo0Lw4zs/3XTA=20.05.2024 20:56:1414.05.2024 10:39:22</TimeStamp>
         <ID>
           <String>Dim Date</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Q1pu8r0CTdHv4O9TK0vc2exoRy4=09/05/2024 00:20:0913/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>Q1pu8r0CTdHv4O9TK0vc2exoRy4=14.05.2024 10:39:2214.05.2024 10:39:22</TimeStamp>
         <ID>
           <String>Dim Circumstances</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>iO+2gTxq4NwiG+CHyDI1969IuBk=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>iO+2gTxq4NwiG+CHyDI1969IuBk=20.05.2024 20:56:1414.05.2024 10:39:22</TimeStamp>
         <ID>
           <String>Dim Teacher</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>eoxdXbiftCYOulj1He9HOLz69us=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>eoxdXbiftCYOulj1He9HOLz69us=20.05.2024 20:56:1414.05.2024 10:39:22</TimeStamp>
         <ID>
           <String>Dim Time</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>7ixDhK5d3w7cENpV53Rb/YaAQmk=20/05/2024 20:32:5113/05/2024 16:16:22Pq+P56twBet3W3f5IDTum3/7G1o=20/05/2024 20:32:5113/05/2024 16:16:22</TimeStamp>
+        <TimeStamp>VD4UAhzvf9PK7Yxuei6kDHf9XTI=23.05.2024 13:44:0214.05.2024 10:39:22Z5rkU+MCaD3y/NNX92w3sOPmcJ4=23.05.2024 13:44:0114.05.2024 10:39:22</TimeStamp>
         <ID>
           <String>School DW</String>
         </ID>
@@ -97,7 +97,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>sz46IkSnfuv8mu9OU8X3T0RN7uI=13/05/2024 23:10:5113/05/2024 16:16:22</TimeStamp>
+      <TimeStamp>sz46IkSnfuv8mu9OU8X3T0RN7uI=14.05.2024 10:39:2214.05.2024 10:39:22</TimeStamp>
       <ID>
         <String>SchoolDW</String>
       </ID>
@@ -106,5 +106,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2024-05-20T19:05:21.72Z</LastDeployed>
+  <LastDeployed>2024-05-23T11:49:48.736667Z</LastDeployed>
 </DeploymentSnapshot>
